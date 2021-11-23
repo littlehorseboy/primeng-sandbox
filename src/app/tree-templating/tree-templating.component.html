@@ -1,0 +1,11 @@
+<p-tree
+  [value]="files"
+  selectionMode="single"
+>
+  <ng-template let-node pTemplate="work">
+    {{ '[work] ' + node.label }}
+  </ng-template>
+  <ng-template let-node pTemplate="default">
+    {{ '[default] ' + node.label }}
+  </ng-template>
+</p-tree>
