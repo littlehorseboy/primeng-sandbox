@@ -7,7 +7,7 @@
 
 <p-tree
   [value]="files"
-  selectionMode="multiple"
+  selectionMode="checkbox"
   [(selection)]="selectedFiles"
   (onNodeSelect)="nodeSelect($event)"
   (onNodeUnselect)="nodeUnSelect($event)"
