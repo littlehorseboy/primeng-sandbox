@@ -1,0 +1,15 @@
+<div style="margin-bottom: 1rem">
+  <button pButton type="button" label="Expand all" (click)="expandAll()" style="margin-right: .5rem"></button>
+  <button pButton type="button" label="Collapse all" (click)="collapseAll()"></button>
+</div>
+
+{{ selectedFiles | json }}
+
+<p-tree
+  [value]="files"
+  selectionMode="multiple"
+  [(selection)]="selectedFiles"
+  (onNodeSelect)="nodeSelect($event)"
+  (onNodeUnselect)="nodeUnSelect($event)"
+>
+</p-tree>

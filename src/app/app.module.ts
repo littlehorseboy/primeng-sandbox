@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { TreeDemoModule } from './tree-demo/tree-demo.module';
 
 @NgModule({
   declarations: [
@@ -12,8 +11,8 @@ import { TreeDemoModule } from './tree-demo/tree-demo.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    TreeDemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
