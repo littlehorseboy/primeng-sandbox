@@ -5,11 +5,13 @@ import { TableModule } from 'primeng/table';
 import { DataTableRoutingModule } from './data-table-routing.module';
 import { DataTableComponent } from './data-table.component';
 import { TableBasicComponent } from './table-basic/table-basic.component';
+import { TableDynamicColumnsComponent } from './table-dynamic-columns/table-dynamic-columns.component';
 
 @NgModule({
   declarations: [
     DataTableComponent,
     TableBasicComponent,
+    TableDynamicColumnsComponent,
   ],
   imports: [
     CommonModule,
