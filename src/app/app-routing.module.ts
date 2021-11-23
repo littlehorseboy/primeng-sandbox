@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'tree', loadChildren: () => import('./tree/tree.module').then(m => m.TreeModule) },
-  { path: '', redirectTo: '/tree', pathMatch: 'full' },
+  { path: 'data-tree', loadChildren: () => import('./data-tree/data-tree.module').then(m => m.DataTreeModule) },
+  { path: 'data-table', loadChildren: () => import('./data-table/data-table.module').then(m => m.DataTableModule) },
+  { path: '', redirectTo: '/data-table', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent },
 ];
 

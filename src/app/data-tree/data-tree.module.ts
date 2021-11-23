@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
-import { TreeRoutingModule } from './tree-routing.module';
-import { TreeComponent } from './tree.component';
+import { DataTreeRoutingModule } from './data-tree-routing.module';
+import { DataTreeComponent } from './data-tree.component';
 
 @NgModule({
   declarations: [
-    TreeComponent
+    DataTreeComponent
   ],
   imports: [
     CommonModule,
-    TreeRoutingModule,
+    DataTreeRoutingModule,
     ButtonModule
   ]
 })
-export class TreeModule { }
+export class DataTreeModule { }
