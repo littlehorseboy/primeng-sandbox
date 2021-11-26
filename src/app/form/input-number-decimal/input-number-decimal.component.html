@@ -1,0 +1,43 @@
+<div>{{ value }}</div>
+
+<p-inputNumber
+  [(ngModel)]="value"
+  mode="decimal"
+  [minFractionDigits]="2"
+  [maxFractionDigits]="3"
+  [step]="0.25"
+  [showButtons]="true"
+>
+</p-inputNumber>
+
+<p-inputNumber
+  [(ngModel)]="value"
+  mode="decimal"
+  [minFractionDigits]="2"
+  [maxFractionDigits]="3"
+  [step]="0.25"
+  [showButtons]="true"
+  buttonLayout="horizontal"
+  spinnerMode="horizontal"
+  incrementButtonClass="p-button-success"
+  decrementButtonClass="p-button-danger"
+  incrementButtonIcon="pi pi-plus"
+  decrementButtonIcon="pi pi-minus"
+>
+</p-inputNumber>
+
+<p-inputNumber
+  [(ngModel)]="value"
+  mode="decimal"
+  [minFractionDigits]="2"
+  [maxFractionDigits]="3"
+  [step]="0.25"
+  [showButtons]="true"
+  buttonLayout="vertical"
+  spinnerMode="vertical"
+  incrementButtonClass="p-button-secondary"
+  decrementButtonClass="p-button-secondary"
+  incrementButtonIcon="pi pi-plus"
+  decrementButtonIcon="pi pi-minus"
+>
+</p-inputNumber>

@@ -4,7 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: 'data-tree', loadChildren: () => import('./data-tree/data-tree.module').then(m => m.DataTreeModule) },
   { path: 'data-table', loadChildren: () => import('./data-table/data-table.module').then(m => m.DataTableModule) },
-  { path: '', redirectTo: '/data-table', pathMatch: 'full' },
+  { path: 'form', loadChildren: () => import('./form/form.module').then(m => m.FormModule) },
+  { path: '', redirectTo: '/form', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent },
 ];
 
